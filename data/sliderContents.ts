@@ -1,35 +1,36 @@
 export const data = [
   {
     id: 1,
-    image: 'massage_chair_image.jpg',
-    heading: 'Ultimate Relaxation Zone',
+    image: '/assets/images/slider-1.jpg',
+    heading: 'Elegance in Every Brushstroke',
     subHeading:
-      'Immerse yourself in the epitome of tranquility as you surrender to the gentle embrace of our state-of-the-art massage chairs. Let the rhythmic movements and expertly designed technology dissolve the stresses of the day, leaving you in a state of pure, blissful serenity.',
+      'Discover the artistry of beauty with our expert makeup artists. From subtle enhancements to glamorous transformations, let our skilled professionals accentuate your features and unveil the most beautiful version of yourself.',
   },
   {
     id: 2,
-    image: 'aromatherapy_diffuser_image.jpg',
-    heading: 'Scented Serenity',
+    image: '/assets/images/slider-2.jpg',
+    heading: 'Trendsetting Tresses',
     subHeading:
-      'Embark on a sensory journey that transcends ordinary relaxation. Elevate your spa experience with aromatherapy, where each breath becomes a moment of rejuvenation. Breathe, relax, and unwind as carefully curated scents envelop you, creating an atmosphere of pure tranquility for a truly transformative escape.',
+      'Transform your look with our exceptional hair styling services. Our experienced stylists are dedicated to creating trendsetting and personalized hairstyles that perfectly complement your unique personality and lifestyle.',
   },
+
   {
     id: 3,
-    image: 'led_skincare_lamp_image.jpg',
+    image: '/assets/images/slider-3.jpg',
     heading: 'Illuminate Your Beauty',
     subHeading:
       'Step into a realm where your inner radiance takes center stage. Revitalize your skin and unveil a luminous glow with the power of cutting-edge LED technology. Our skincare lamps are designed to nourish and rejuvenate, leaving you with a complexion that not only reflects light but radiates confidence and beauty.',
   },
   {
     id: 4,
-    image: 'hot_stone_massage_set_image.jpg',
+    image: '/assets/images/slider-4.jpg',
     heading: 'Healing Heat Therapy',
     subHeading:
       'Immerse yourself in the therapeutic embrace of our hot stone massage set—a luxurious journey of relaxation for both body and soul. The harmonious combination of soothing warmth and expertly placed stones creates a transformative experience, melting away tension and restoring balance to your senses.',
   },
   {
     id: 5,
-    image: 'pedi_spa_station_image.jpg',
+    image: '/assets/images/slider-5.jpg',
     heading: 'Pamper Your Feet',
     subHeading:
       'Indulge in the ultimate luxury for your feet with our pedi-spa station. Step into a world of relaxation and rejuvenation as your feet are pampered with care and precision. Our expert therapists will ensure that every step you take is one of comfort and that your feet emerge not just happy but revitalized and ready to conquer the world.',
