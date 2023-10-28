@@ -8,6 +8,9 @@ import 'swiper/css/pagination';
 import { data } from '@/data/sliderContents';
 import Image from 'next/image';
 import Overlay from '@/components/ui/Overlay';
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/Button';
 
 const Slider = () => {
   return (
@@ -35,6 +38,16 @@ const Slider = () => {
               className='h-full w-full object-cover'
             />
             <Overlay />
+            <div className='sp container absolute bottom-0 left-28 right-0 top-0 h-full w-full space-y-5 text-white'>
+              <h1>{slide.heading}</h1>
+              <p className='max-w-5xl'>{slide.subHeading}</p>
+              <Link
+                href='/beauty-packages'
+                className={cn(buttonVariants({ variant: 'secondary' }))}
+              >
+                Browse Beauty Packages
+              </Link>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
