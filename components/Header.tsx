@@ -30,7 +30,7 @@ const Header = () => {
                 href={item.href}
                 className={cn(
                   'link-item',
-                  pathname === item.href ? 'text-black' : 'text-black/50'
+                  pathname === item.href ? 'text-black' : 'text-black/60'
                 )}
               >
                 {item.label}
