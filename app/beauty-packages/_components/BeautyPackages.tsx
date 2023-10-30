@@ -4,6 +4,7 @@ import Error from '@/components/ui/Error';
 import Loading from '@/components/ui/Loading';
 import SectionTitle from '@/components/ui/SectionTitle';
 import useFetch from '@/hooks/useFetch';
+import { beautyPackageType } from '@/types/beautyPackage';
 import BeautyPackageCard from './BeautyPackageCard';
 
 const BeautyPackages = () => {
@@ -22,7 +23,7 @@ const BeautyPackages = () => {
       {error && <Error error={error.message} />}
       {beautyPackages && (
         <div className='grid-cols grid gap-20 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
-          {beautyPackages.map((item) => (
+          {beautyPackages.map((item: beautyPackageType) => (
             <BeautyPackageCard key={item._id} item={item} />
           ))}
         </div>
