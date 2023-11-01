@@ -8,7 +8,7 @@ import { buttonVariants } from './ui/Button';
 const navContents = [
   { href: '/', label: 'Home' },
   { href: '/beauty-packages', label: 'Beauty Packages' },
-  { href: '/specialist', label: 'Specialist' },
+  { href: '/specialists', label: 'Specialists' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];

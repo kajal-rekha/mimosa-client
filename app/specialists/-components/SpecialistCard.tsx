@@ -1,23 +1,23 @@
 import { buttonVariants } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
-import { beautyPackageType } from '@/types/beautyPackage';
+import { specialistType } from '@/types/specialist';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface BeautyPackageCardProps {
-  item: beautyPackageType;
+interface SpecialistCardProps {
+  specialist: specialistType;
 }
 
-const BeautyPackageCard: React.FC<BeautyPackageCardProps> = ({ item }) => {
+const SpecialistCard: React.FC<SpecialistCardProps> = ({ specialist }) => {
   return (
     <div className='w-full space-y-5 rounded-xl bg-white p-5 shadow-md shadow-gray'>
       <Link
-        href={`/beauty-packages/${item._id}`}
+        href={`/specialists/${specialist._id}`}
         className='group inline-block h-[20rem] w-full overflow-hidden rounded-xl shadow-md shadow-gray'
       >
         <Image
-          src={item.images[0]}
-          alt={item.title}
+          src={specialist.photoUrl}
+          alt={specialist.name}
           width={1280}
           height={720}
           priority
@@ -26,15 +26,16 @@ const BeautyPackageCard: React.FC<BeautyPackageCardProps> = ({ item }) => {
       </Link>
 
       <div className='space-y-2.5'>
-        <small className='uppercase text-purple'>{item.category}</small>
-        <h3 className='truncate'>{item.title}</h3>
+        <h3 className='truncate'>{specialist.name}</h3>
+        <small className='uppercase text-purple'>
+          {specialist.designation}
+        </small>
         <hr className='border-gray' />
-        <p className='text-black/60'>{item.description.substring(0, 50)}...</p>
+        <p className='text-black/60'>{specialist.bio}</p>
 
-        <div className='flex items-center justify-between gap-2.5'>
-          <h3>${item.price}</h3>
+        <div className='flex  justify-end'>
           <Link
-            href={`/beauty-packages/${item._id}`}
+            href={`/specialists/${specialist._id}`}
             className={cn(buttonVariants({ variant: 'secondary' }))}
           >
             View Details
@@ -45,4 +46,4 @@ const BeautyPackageCard: React.FC<BeautyPackageCardProps> = ({ item }) => {
   );
 };
 
-export default BeautyPackageCard;
+export default SpecialistCard;
