@@ -4,7 +4,7 @@
 
 /* COMMON STYLES */
 .sp {
-  @apply py-28;
+  @apply py-32;
 }
 
 .eq {

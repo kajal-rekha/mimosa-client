@@ -16,7 +16,7 @@ export const data = [
 
   {
     id: 3,
-    image: '/assets/images/slider-3.jpg',
+    image: '/assets/images/slider-6.jpeg',
     heading: 'Illuminate Your Beauty',
     subHeading:
       'Step into a realm where your inner radiance takes center stage. Revitalize your skin and unveil a luminous glow with the power of cutting-edge LED technology. Our skincare lamps are designed to nourish and rejuvenate, leaving you with a complexion that not only reflects light but radiates confidence and beauty.',
