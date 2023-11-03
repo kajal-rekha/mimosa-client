@@ -1,38 +1,30 @@
 export const data = [
   {
-    id: 1,
-    image: '/assets/images/slider-1.jpg',
-    heading: 'Elegance in Every Brushstroke',
+    image: '/assets/images/slide-image-1.jpg',
+    heading: 'Experience Relaxation and Rejuvenation',
     subHeading:
-      'Discover the artistry of beauty with our expert makeup artists. From subtle enhancements to glamorous transformations, let our skilled professionals accentuate your features and unveil the most beautiful version of yourself.',
+      'Unwind in our tranquil oasis, surrounded by lush gardens and soothing sounds of nature. Discover a world of serenity and beauty as our expert therapists pamper you with a wide range of treatments designed to rejuvenate your body, mind, and soul. Let the stresses of daily life melt away as you embark on a journey to rediscover your inner peace and natural beauty in an atmosphere of pure tranquility.',
   },
   {
-    id: 2,
-    image: '/assets/images/slider-2.jpg',
-    heading: 'Trendsetting Tresses',
+    image: '/assets/images/slide-image-2.jpg',
+    heading: 'Escape to Paradise - Your Journey to Total Bliss',
     subHeading:
-      'Transform your look with our exceptional hair styling services. Our experienced stylists are dedicated to creating trendsetting and personalized hairstyles that perfectly complement your unique personality and lifestyle.',
-  },
-
-  {
-    id: 3,
-    image: '/assets/images/slider-6.jpeg',
-    heading: 'Illuminate Your Beauty',
-    subHeading:
-      'Step into a realm where your inner radiance takes center stage. Revitalize your skin and unveil a luminous glow with the power of cutting-edge LED technology. Our skincare lamps are designed to nourish and rejuvenate, leaving you with a complexion that not only reflects light but radiates confidence and beauty.',
+      'Immerse yourself in our spa sanctuary, a hidden gem nestled in a breathtaking tropical paradise. Our spa offers a holistic approach to well-being, where ancient healing traditions meet modern luxury. From invigorating massages to revitalizing facials, our treatments are designed to transport you to a place of deep relaxation, inner peace, and ultimate rejuvenation. Experience a blissful transformation as you reconnect with your inner self.',
   },
   {
-    id: 4,
-    image: '/assets/images/slider-4.jpg',
-    heading: 'Healing Heat Therapy',
-    subHeading:
-      'Immerse yourself in the therapeutic embrace of our hot stone massage set—a luxurious journey of relaxation for both body and soul. The harmonious combination of soothing warmth and expertly placed stones creates a transformative experience, melting away tension and restoring balance to your senses.',
+    image: '/assets/images/slide-image-3.jpg',
+    heading: 'Rediscover Your Natural Radiance and Elegance',
+    subHeading: `Let our team of skilled beauty experts enhance your beauty and confidence in a welcoming and luxurious environment. Our comprehensive range of services includes everything from precision haircuts and coloring to rejuvenating facials and soothing body treatments. Step into our world of beauty and elegance, and leave feeling like your most glamorous self. We're here to make you look and feel amazing.`,
   },
   {
-    id: 5,
-    image: '/assets/images/slider-5.jpg',
-    heading: 'Pamper Your Feet',
+    image: '/assets/images/slide-image-4.jpg',
+    heading: 'Revitalize Your Mind, Body with Healing Touch',
     subHeading:
-      'Indulge in the ultimate luxury for your feet with our pedi-spa station. Step into a world of relaxation and rejuvenation as your feet are pampered with care and precision. Our expert therapists will ensure that every step you take is one of comfort and that your feet emerge not just happy but revitalized and ready to conquer the world.',
+      'Our holistic spa treatments go beyond the surface to restore balance and harmony to your entire being. Allow our experienced therapists to guide you on a journey of self-discovery and renewal. From holistic massages that melt away tension to mindfulness meditation and energy healing, we have a selection of therapies to suit your needs. Feel refreshed, rejuvenated, and ready to face the world with a new sense of vitality and purpose.',
+  },
+  {
+    image: '/assets/images/slide-image-5.jpg',
+    heading: 'Elevate Your Beauty with Our Expert Care',
+    subHeading: `Step into our world of elegance, where we redefine beauty and pamper you like royalty. Our dedicated team of beauty professionals is committed to enhancing your natural beauty and boosting your confidence. Experience a personalized approach to beauty, from makeup and hair styling to nail care and skincare. When you leave our beauty parlor, you'll feel empowered and radiate self-assuredness wherever you go.`,
   },
 ];

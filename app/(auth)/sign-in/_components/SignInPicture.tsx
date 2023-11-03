@@ -5,7 +5,7 @@ const SignInPicture = () => {
   return (
     <div className='relative h-full w-full overflow-hidden '>
       <Image
-        src='https://images.pexels.com/photos/3218801/pexels-photo-3218801.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+        src='https://res.cloudinary.com/dh0ado2ir/image/upload/v1692807176/pexels-photo-1308881_f7rwiy.jpg'
         alt='sign in picture'
         width={720}
         height={1280}

@@ -14,7 +14,7 @@ import { buttonVariants } from '@/components/ui/Button';
 
 const Slider = () => {
   return (
-    <section className='h-[calc(100vh-5rem)] w-full'>
+    <section className='mt-20 h-[calc(100vh-5rem)] w-full'>
       <Swiper
         pagination={{ clickable: true }}
         navigation={true}
@@ -29,7 +29,7 @@ const Slider = () => {
         className='mySwiper h-full w-full'
       >
         {data.map((slide) => (
-          <SwiperSlide key={slide.id} className='relative h-full w-full'>
+          <SwiperSlide key={slide.heading} className='relative h-full w-full'>
             <Image
               src={slide.image}
               alt={slide.heading}
