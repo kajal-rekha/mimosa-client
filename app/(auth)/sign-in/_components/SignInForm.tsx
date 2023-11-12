@@ -1,8 +1,11 @@
 'use client';
 
 import Button from '@/components/ui/Button';
+import { axiosPost } from '@/lib/axiosPost';
 import Link from 'next/link';
+
 import { useCallback, useState } from 'react';
+import toast from 'react-hot-toast';
 
 interface SignInFormData {
   email: string;
@@ -13,11 +16,28 @@ const SignInForm = () => {
     email: '',
     password: '',
   });
+
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const handleSubmit = useCallback(
     async (e: React.SyntheticEvent) => {
       e.preventDefault();
-      console.log(formData);
+      setIsLoading(true);
+
+      const data = await axiosPost('/api/auth/login', formData);
+
+      if (data) {
+        setIsLoading(false);
+        setFormData({
+          email: '',
+          password: '',
+        });
+
+        toast.success('Login successfull.');
+      } else {
+        setIsLoading(false);
+      }
     },
+
     [formData]
   );
   return (
@@ -41,7 +61,7 @@ const SignInForm = () => {
             type='text'
             id='email'
             placeholder='hello@example.com'
-            className='eq w-full rounded-2xl border border-gray bg-transparent p-5 outline-none focus:border-blue'
+            className='eq w-full rounded-xl border border-gray bg-transparent px-3 py-5 outline-none focus:border-blue'
           />
         </div>
 
@@ -55,10 +75,10 @@ const SignInForm = () => {
             type='password'
             id='password'
             placeholder='Write your password'
-            className='eq w-full rounded-2xl border border-gray bg-transparent p-5 outline-none focus:border-blue'
+            className='eq w-full rounded-xl border border-gray bg-transparent px-3 py-5 outline-none focus:border-blue'
           />
         </div>
-        <Button variant='secondary' type='submit'>
+        <Button variant='secondary' type='submit' isLoading={isLoading}>
           Login
         </Button>
 
