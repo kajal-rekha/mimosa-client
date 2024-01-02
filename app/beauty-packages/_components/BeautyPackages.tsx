@@ -48,7 +48,7 @@ const BeautyPackages: React.FC<BeautyPackagesProps> = ({ native }) => {
                   (a: beautyPackageType, b: beautyPackageType) =>
                     a.price - b.price
                 )
-                .slice(0, 8)
+                .slice(0, 6)
                 .map((item: beautyPackageType) => (
                   <BeautyPackageCard key={item._id} item={item} />
                 ))}
