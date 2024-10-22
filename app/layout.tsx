@@ -3,11 +3,16 @@ import Header from '@/components/Header';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Bai_Jamjuree } from 'next/font/google';
 import './globals.css';
 import { Toaster } from 'react-hot-toast';
 import ReduxProvider from '@/providers/ReduxProvider';
 
-const inter = Inter({ subsets: ['latin'] });
+const baiJamjuree = Bai_Jamjuree({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'],
+});
+
 
 export const metadata: Metadata = {
   title: 'Mimosa | Home',
@@ -21,7 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={cn(inter.className, 'bg-white text-black antialiased')}>
+      <body
+        className={cn(baiJamjuree.className, 'bg-white text-black antialiased')}
+      >
         <ReduxProvider>
           <Toaster />
           <Header />

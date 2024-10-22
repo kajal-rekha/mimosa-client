@@ -17,7 +17,7 @@ interface SpecialistsProps {
 const Specialists: React.FC<SpecialistsProps> = ({ native }) => {
   const { data: specialists, isLoading, error } = useFetch('/api/specilists');
   return (
-    <section className='sp container'>
+    <section className='container'>
       <SectionTitle title='Specialists' />
 
       {isLoading && <Loading isLoading={isLoading} />}
@@ -40,7 +40,7 @@ const Specialists: React.FC<SpecialistsProps> = ({ native }) => {
       )}
 
       {!native && (
-        <div className='mt-10 flex justify-center'>
+        <div className=' mt-20 flex justify-center'>
           <Link
             href='/specialists'
             className={cn(buttonVariants({ variant: 'outline' }))}

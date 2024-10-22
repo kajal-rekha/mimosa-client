@@ -1,7 +1,8 @@
 import { beautyPackageType } from '@/types/beautyPackage';
 import Image from 'next/image';
 import { useState } from 'react';
-import BeautyPAcckageItemContent from './BeautyPAcckageItemContent';
+import BeautyPackageItemContent from './BeautyPackageItemContent';
+
 import BeautyPackageItemImage from './BeautyPackageItemImage';
 
 interface beautyPackageItemProps {
@@ -10,13 +11,13 @@ interface beautyPackageItemProps {
 
 const BeautyPackageItem: React.FC<beautyPackageItemProps> = ({ item }) => {
   return (
-    <section className='sp grid-cols container grid gap-20 md:grid-cols-2 mt-20'>
+    <section className='sp grid-cols container mt-20 grid gap-20 md:grid-cols-2'>
       <div>
-        <BeautyPackageItemImage images={item.images}/>
+        <BeautyPackageItemImage images={item.images} />
       </div>
 
       <div>
-        <BeautyPAcckageItemContent item={item} />
+        <BeautyPackageItemContent beautyPackage={item} />
       </div>
     </section>
   );

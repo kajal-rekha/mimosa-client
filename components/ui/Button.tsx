@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils';
 import { cva, VariantProps } from 'class-variance-authority';
 import { Loader2 } from 'lucide-react';
+import { ButtonHTMLAttributes } from 'react';
 
 export const buttonVariants = cva(
   'eq inline-block whitespace-nowrap rounded-xl border px-5 py-2.5 text-center text-lg disabled:cursor-default disabled:border-gray disabled:bg-gray disabled:text-black',
@@ -14,7 +15,7 @@ export const buttonVariants = cva(
         danger:
           'bg-red text-white border-red hover:bg-red/90 hover:border-red/90',
         outline:
-          'bg-transparent text-black border-black hover:bg-black hover:text-white',
+          'bg-transparent text-black border-black hover:bg-blue hover:text-white hover:border-blue',
       },
       size: {
         auto: 'w-auto',
@@ -33,6 +34,9 @@ interface ButtonProps
     VariantProps<typeof buttonVariants> {
   isLoading?: boolean;
 }
+
+
+
 
 const Button: React.FC<ButtonProps> = ({
   onClick,
