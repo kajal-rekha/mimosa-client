@@ -2,7 +2,7 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import Image from 'next/image';
 
 
-const AboutUs = ()=> {
+const About = ()=> {
   return (
     <main className='container sp'>
      <SectionTitle title='About Us' />
@@ -59,4 +59,4 @@ const AboutUs = ()=> {
   );
 }
 
-export default AboutUs;
+export default About;
