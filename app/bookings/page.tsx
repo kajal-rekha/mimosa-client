@@ -6,11 +6,7 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import useFetch from '@/hooks/useFetch';
 import { bookingType } from '@/types/booking';
 
-interface BookingDataProps {
-  data: bookingType;
-}
-
-const BookingData: React.FC<BookingDataProps> = () => {
+const BookingData: React.FC = () => {
   const { data: booking, isLoading, error } = useFetch('/api/bookings');
 
   return (
@@ -22,7 +18,7 @@ const BookingData: React.FC<BookingDataProps> = () => {
       {!isLoading && !error && booking?.length === 0 && (
         <p>No bookings available!</p>
       )}
-      
+
       {booking &&
         booking.map((item: bookingType) => (
           <div key={item._id}>

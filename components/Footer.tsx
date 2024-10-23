@@ -11,11 +11,11 @@ import {
 
 const Footer = () => {
   return (
-    <footer className='bg-red/10  py-10 text-black/90'>
+    <footer className='bg-red/10 pt-10 text-black/90'>
       <div className='container mx-auto px-4'>
         <div className='mb-8 flex flex-col items-center justify-between md:flex-row'>
           <div className='mb-6 md:mb-0'>
-            <h2 className='flex items-center text-3xl font-bold text-red/80'>
+            <h2 className='flex items-center text-3xl font-bold text-blue'>
               Mimosa
               <Scissors className='ml-2 h-6 w-6' />
             </h2>
@@ -28,7 +28,7 @@ const Footer = () => {
               target='_blank'
               className='rounded-full bg-white p-2 shadow-md transition-shadow hover:shadow-lg'
             >
-              <Facebook className='h-6 w-6 text-red/80' />
+              <Facebook className='h-6 w-6 text-blue' />
             </Link>
 
             <Link
@@ -36,7 +36,7 @@ const Footer = () => {
               target='_blank'
               className='rounded-full bg-white p-2 shadow-md transition-shadow hover:shadow-lg'
             >
-              <Instagram className='h-6 w-6 text-red/80' />
+              <Instagram className='h-6 w-6 text-blue' />
             </Link>
 
             <Link
@@ -44,21 +44,21 @@ const Footer = () => {
               target='_blank'
               className='rounded-full bg-white p-2 shadow-md transition-shadow hover:shadow-lg'
             >
-              <Twitter className='h-6 w-6 text-red/80' />
+              <Twitter className='h-6 w-6 text-blue' />
             </Link>
             <Link
               href='https://linkedin.com'
               target='_blank'
               className='rounded-full bg-white p-2 shadow-md transition-shadow hover:shadow-lg'
             >
-              <Linkedin className='h-6 w-6 text-red/80' />
+              <Linkedin className='h-6 w-6 text-blue' />
             </Link>
           </div>
         </div>
 
         <div className='mb-8 grid grid-cols-1 gap-8 md:grid-cols-3'>
           <div className=' rounded-lg p-6 '>
-            <h3 className='mb-4 flex items-center text-lg font-semibold text-red/80'>
+            <h3 className='mb-4 flex items-center text-lg font-semibold text-blue'>
               <Heart className='mr-2 h-5 w-5' /> Our Services
             </h3>
             <ul className=' flex flex-col gap-2'>
@@ -70,10 +70,10 @@ const Footer = () => {
                 'Massages',
               ].map((service) => (
                 <li key={service} className='flex  items-center gap-1 text-lg'>
-                  <Star className='mr-2 h-4 w-4 text-red' />
+                  <Star className='mr-2 h-4 w-4 text-blue' />
                   <Link
                     href={`/services#${service.toLowerCase().replace(' ', '-')}`}
-                    className='eq hover:text-red/80'
+                    className='eq hover:text-blue'
                   >
                     {service}
                   </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
 
           <div className=' rounded-lg p-6 '>
-            <h3 className=' mb-4 font-semibold text-red/80'>Quick Links</h3>
+            <h3 className=' mb-4 font-semibold text-blue'>Quick Links</h3>
             <ul className='flex flex-col gap-2'>
               {[
                 'Home',
@@ -95,7 +95,7 @@ const Footer = () => {
                 <li key={item} className='text-lg'>
                   <Link
                     href={`/${item.toLowerCase().replace(' ', '-')}`}
-                    className='eq hover:text-red/80'
+                    className='eq hover:text-blue'
                   >
                     {item}
                   </Link>
@@ -104,15 +104,15 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=' flex flex-col gap-2 rounded-lg p-6'>
-            <h3 className=' text-lg font-semibold text-red/80'>Get in Touch</h3>
+          <div className=' flex flex-col gap-3 rounded-lg p-6'>
+            <h3 className=' text-lg font-semibold text-blue'>Get in Touch</h3>
             <p>123 Beauty Lane, Glamour City, ST 12345</p>
             <p>Phone: (555) 123-4567</p>
-            <p>Email: info@bettybeauty.com</p>
+            <p>Email: info@mimosa.com</p>
             <div className='mt-3'>
               <Link
                 href='/contact'
-                className='eq rounded-full bg-red/90 px-7 py-3 text-center text-white hover:bg-red/85  '
+                className='eq rounded-full bg-blue px-7 py-3 text-center text-white hover:bg-blue/80  '
               >
                 Book Appointment
               </Link>
@@ -120,12 +120,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='border-t border-red/50 p-10 text-center'>
+      <div className='border-t border-blue p-10 text-center'>
         <p>
           &copy; {new Date().getFullYear()}{' '}
           <Link
             href='/'
-            className='eq border-b border-red/80 hover:text-red/80'
+            className='eq border-b border-blue hover:text-blue'
           >
             mimosa
           </Link>{' '}
