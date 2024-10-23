@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Facebook, Heart, Instagram, Scissors, Star, Twitter } from 'lucide-react';
 
-export default function Footer() {
+ const Footer=()=> {
   return (
    <footer className="bg-red/10  text-black/90 py-10">
       <div className="container mx-auto px-4">
@@ -78,3 +78,6 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+export default Footer;

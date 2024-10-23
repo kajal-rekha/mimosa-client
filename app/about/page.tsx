@@ -1,8 +1,8 @@
 import SectionTitle from '@/components/ui/SectionTitle';
 import Image from 'next/image';
-import Link from 'next/link';
 
-export default function AboutUs() {
+
+const AboutUs = ()=> {
   return (
     <main className='container sp'>
      <SectionTitle title='About Us' />
@@ -58,3 +58,5 @@ export default function AboutUs() {
     </main>
   );
 }
+
+export default AboutUs;
