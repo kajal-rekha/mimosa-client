@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
 
           <div className=' rounded-lg p-6 '>
-            <h3 className=' mb-4 font-semibold text-blue'>Quick Links</h3>
+            <h3 className=' mb-4 font-semibold text-blue text-lg'>Quick Links</h3>
             <ul className='flex flex-col gap-2'>
               {[
                 'Home',
